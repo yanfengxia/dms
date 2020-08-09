@@ -42,7 +42,7 @@ services:
       - kafka-rest
     environment:
       KAFKA_REST_PROXY_URL: http://kafka-rest:8082
-      PROXY: true
+      PROXY: 'true'
     ports:
       - 8000:8000
     networks:
