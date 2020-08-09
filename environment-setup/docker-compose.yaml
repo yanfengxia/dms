@@ -22,7 +22,7 @@ services:
     networks:
       - network-demo
     extra_hosts:
-      - service_host: linux.local
+      - 'service_host: linux.local'
   kafka-rest:
     container_name: demo-kafka-rest
     image: confluentinc/cp-kafka-rest:latest
