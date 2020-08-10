@@ -21,8 +21,6 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://service_host:9092
     networks:
       - network-demo
-    extra_hosts:
-      - 'service_host: 10.0.0.38'
   kafka-rest:
     container_name: demo-kafka-rest
     image: confluentinc/cp-kafka-rest:latest
@@ -35,6 +33,8 @@ services:
       - 8082:8082
     networks:
       - network-demo
+    extra_hosts:
+      - 'service_host: 10.0.0.38'
   kafka-topics:
     container_name: demo-kafka-topics
     image: landoop/kafka-topics-ui
