@@ -1,0 +1,2 @@
+org/example/ServiceWithKafkaApplication.java
+ org.example.ServiceWithKafkaApplication

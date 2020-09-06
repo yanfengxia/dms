@@ -13,7 +13,6 @@
             <option value="$PROJECT_DIR$/../proxy-service" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -25,7 +24,28 @@
             <option value="$PROJECT_DIR$/../registry-service" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../service-with-elasticsearch" />
+        <option name="gradleHome" value="$USER_HOME$/gradle-4.6" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../service-with-elasticsearch" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../service-with-kafka" />
+        <option name="gradleHome" value="$USER_HOME$/gradle-4.6" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../service-with-kafka" />
+          </set>
+        </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -37,7 +57,6 @@
             <option value="$PROJECT_DIR$/../service-with-nosql" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -49,7 +68,6 @@
             <option value="$PROJECT_DIR$/../service-with-rds" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -61,7 +79,6 @@
             <option value="$PROJECT_DIR$/../service-with-rule-engine" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
@@ -72,7 +89,17 @@
             <option value="$PROJECT_DIR$/../transaction-tracking-service" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../../../service-with-elasticsearch" />
+        <option name="gradleHome" value="$USER_HOME$/gradle-4.6" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../../../service-with-elasticsearch" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
