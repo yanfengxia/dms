@@ -19,18 +19,18 @@ services:
          - 9300:9300
       networks:
          - network-example
-      kibana:
-         image: kibana:latest
-         container_name: example-kibana
-         environment:
-            - SERVER_NAME=localhost
-            - ELASTICSEARCH_HOSTS=http://elastic:9200
-         ports:
-            - 5601:5601
-         depends_on:
-            - elastic
-         networks:
-            - network-example
+   kibana:
+      image: kibana:latest
+      container_name: example-kibana
+      environment:
+         - SERVER_NAME=localhost
+         - ELASTICSEARCH_HOSTS=http://elastic:9200
+      ports:
+         - 5601:5601
+      depends_on:
+         - elastic
+      networks:
+         - network-example
    apmserver:
       image: elastic/apm-server:latest
       container_name: example-apmserver
@@ -46,8 +46,8 @@ services:
          - elastic
       networks:
          - network-example
-   networks:
-      network-example:
+networks:
+   network-example:
 #  zookeeper:
 #    container_name: demo-zookeeper
 #    image: confluentinc/cp-zookeeper:latest
@@ -97,5 +97,3 @@ services:
 #      - 8000:8000
 #    networks:
 #      - network-demo
-networks:
-   network-demo:
