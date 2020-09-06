@@ -4,15 +4,11 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../proxy-service" />
     <file type="web" url="file://$PROJECT_DIR$/../registry-service" />
-    <file type="web" url="file://$PROJECT_DIR$/../service-with-elasticsearch" />
-    <file type="web" url="file://$PROJECT_DIR$/../service-with-kafka" />
-    <file type="web" url="file://$PROJECT_DIR$/../service-with-nosql" />
-    <file type="web" url="file://$PROJECT_DIR$/../service-with-rds" />
-    <file type="web" url="file://$PROJECT_DIR$/../service-with-rule-engine" />
-    <file type="web" url="file://$PROJECT_DIR$/../transaction-tracking-service" />
-    <file type="web" url="file://$PROJECT_DIR$/../../../service-with-elasticsearch" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
   </component>
 </project>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e963e51-a46f-46e3-94bf-88ee59e8d5db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../dms-environment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dms-environment/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dms-environment/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dms-environment/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/src/main/java/com/example/proxy/ProxyServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proxy-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registry-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dms-project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environment-setup/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../environment-setup/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/5.6.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/5.6.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/6.1.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proxy-service/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../proxy-service/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/build/resources/main/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../registry-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/6.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-elasticsearch/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-kafka/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../service-with-kafka/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-kafka/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../service-with-kafka/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../service-with-kafka/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../dms-environment">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../proxy-service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../registry-service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h7dVYAKsVrUpwkt3RjU6BxS60E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../registry-service" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29804373" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../registry-service" />
+      <recent name="$PROJECT_DIR$/../proxy-service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProxyServiceApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="proxy-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.proxy.ProxyServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="registry-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.RegistryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ProxyServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e963e51-a46f-46e3-94bf-88ee59e8d5db" name="Default Changelist" comment="" />
+      <created>1599366089252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599366089252</updated>
+      <workItem from="1599366090254" duration="633000" />
+      <workItem from="1599366740003" duration="3735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="133" key="#Project_Structure" timestamp="1599366115434">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="768" y="133" key="#Project_Structure/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599366115434" />
+    <state x="905" y="247" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599366533167">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="905" y="247" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599366533167" />
+    <state width="1742" height="290" key="GridCell.Tab.0.bottom" timestamp="1599369804530">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.0.bottom/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804530" />
+    <state width="1742" height="290" key="GridCell.Tab.0.center" timestamp="1599369804529">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.0.center/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804529" />
+    <state width="1742" height="290" key="GridCell.Tab.0.left" timestamp="1599369804529">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.0.left/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804529" />
+    <state width="1742" height="290" key="GridCell.Tab.0.right" timestamp="1599369804530">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.0.right/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804530" />
+    <state width="1742" height="290" key="GridCell.Tab.1.bottom" timestamp="1599369804532">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.1.bottom/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804532" />
+    <state width="1742" height="290" key="GridCell.Tab.1.center" timestamp="1599369804531">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.1.center/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804531" />
+    <state width="1742" height="290" key="GridCell.Tab.1.left" timestamp="1599369804531">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.1.left/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804531" />
+    <state width="1742" height="290" key="GridCell.Tab.1.right" timestamp="1599369804532">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state width="1742" height="290" key="GridCell.Tab.1.right/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599369804532" />
+    <state x="927" y="258" key="NewModule_or_Project.wizard" timestamp="1599374180432">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="927" y="258" key="NewModule_or_Project.wizard/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599374180432" />
+    <state x="768" y="133" key="SettingsEditor" timestamp="1599374182497">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="768" y="133" key="SettingsEditor/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599374182497" />
+    <state x="987" y="306" width="586" height="490" key="find.popup" timestamp="1599374670242">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="987" y="306" width="586" height="490" key="find.popup/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599374670242" />
+    <state x="1137" y="433" key="new project wizard" timestamp="1599366811171">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="1137" y="433" key="new project wizard/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599366811171" />
+    <state x="945" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1599368273304">
+      <screen x="0" y="23" width="2560" height="1057" />
+    </state>
+    <state x="945" y="258" width="670" height="676" key="search.everywhere.popup/2560.23.1920.1057/-1871.23.1871.1057/0.23.2560.1057@0.23.2560.1057" timestamp="1599368273304" />
+  </component>
+</project>

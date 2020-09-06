@@ -1,0 +1,15 @@
+
+
+server:
+  port: 55001
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhos:8761/eureka/
+
+spring:
+  application:
+    name: proxy-service
