@@ -2,7 +2,7 @@ version: '2'
 services:
    elastic:
       container_name: example-elastic
-      image: elasticsearch:latest
+      image: elasticsearch
       environment:
          - node.name=elastic
          - cluster.name=es_cluster
@@ -20,7 +20,7 @@ services:
       networks:
          - network-example
    kibana:
-      image: kibana:latest
+      image: kibana
       container_name: example-kibana
       environment:
          - SERVER_NAME=localhost
@@ -32,7 +32,7 @@ services:
       networks:
          - network-example
    apmserver:
-      image: elastic/apm-server:latest
+      image: elastic/apm-server
       container_name: example-apmserver
       command: >
          apm-server -e
