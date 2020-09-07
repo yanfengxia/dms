@@ -1,2 +1,0 @@
-# dms
-demo micro services
