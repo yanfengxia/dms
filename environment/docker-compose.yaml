@@ -58,13 +58,16 @@ services:
          - network-example
       ports:
          - 3306:3306
-   redis:
-      container_name: example-redis
-      image: redis
+   couchbase:
+      image: couchbase:community
+      container_name: example-couchbase
       networks:
          - network-example
       ports:
-         - 6379:6379
+         - 8091-8096:8091-8096
+         - 11207:11207
+         - 11210-11211:11210-11211
+         - 18091-18096:18091-18096
 networks:
    network-example:
 #  zookeeper:

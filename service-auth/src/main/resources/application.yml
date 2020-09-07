@@ -2,6 +2,8 @@
 
 server:
   port: 55002
+  servlet:
+    context-path: /service-auth
 
 
 
@@ -22,7 +24,12 @@ spring:
     url: jdbc:mysql://linux.local:3306/example
     username: root
     password: abcd.1234
-
   jpa:
     hibernate:
       ddl-auto: update
+  cache:
+    type: couchbase
+    couchbase:
+      expiration: 1h
+  couchbase:
+    connection-string:
