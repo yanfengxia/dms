@@ -1,5 +1,0 @@
-spring:
-  kafka:
-    consumer:
-      bootstrap-servers: ${KAFKA_HOST:linux.local:9093}
-      group-id: group-demo
