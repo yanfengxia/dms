@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+server:
+  port: 8761
+
+
+spring:
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1
+  application:
+    name: registry-service

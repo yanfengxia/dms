@@ -1,0 +1,111 @@
+version: '2'
+services:
+   elastic:
+      container_name: example-elastic
+      image: elasticsearch:7.9.1
+      environment:
+         - node.name=elastic
+         - cluster.name=es_cluster
+         - cluster.initial_master_nodes=elastic
+         - bootstrap.memory_lock=true
+         - indices.breaker.total.use_real_memory=false
+         - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
+      ulimits:
+         memlock:
+            soft: -1
+            hard: -1
+      ports:
+         - 9200:9200
+         - 9300:9300
+      networks:
+         - network-example
+   kibana:
+      image: kibana:7.9.1
+      container_name: example-kibana
+      environment:
+         - SERVER_NAME=localhost
+         - ELASTICSEARCH_HOSTS=http://elastic:9200
+      ports:
+         - 5601:5601
+      depends_on:
+         - elastic
+      networks:
+         - network-example
+   apmserver:
+      image: elastic/apm-server:7.9.1
+      container_name: example-apmserver
+      command: >
+         apm-server -e
+           -E apm-server.rum.enabled=true
+           -E apm-server.host=0.0.0.0:8200
+           -E setup.kibana.host=kibana:5601
+           -E output.elasticsearch.hosts=elastic:9200
+      ports:
+         - 8200:8200
+      depends_on:
+         - elastic
+      networks:
+         - network-example
+   mysql:
+      container_name: example-mysql
+      image: mysql:8
+      command: --default-authentication-plugin=mysql_native_password --init-file /data/application/db-init.sql
+      volumes:
+         - ./db-init.sql:/data/application/db-init.sql
+      environment:
+         MYSQL_ROOT_PASSWORD: abcd.1234
+      networks:
+         - network-example
+      ports:
+         - 3306:3306
+networks:
+   network-example:
+#  zookeeper:
+#    container_name: demo-zookeeper
+#    image: confluentinc/cp-zookeeper:latest
+#    environment:
+#      ZOOKEEPER_CLIENT_PORT: 2181
+#    networks:
+#      - network-demo
+#    ports:
+#      - 2181:2181
+#  kafka:
+#    container_name: demo-kafka
+#    image: confluentinc/cp-kafka:latest
+#    depends_on:
+#      - zookeeper
+#    ports:
+#      - 9092:9092
+#    environment:
+#      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://service_host:9092
+#    networks:
+#      - network-demo
+#    extra_hosts:
+#      - 'service_host: 10.0.0.38'
+#  kafka-rest:
+#    container_name: demo-kafka-rest
+#    image: confluentinc/cp-kafka-rest:latest
+#    depends_on:
+#      - kafka
+#    environment:
+#      KAFKA_REST_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_REST_HOST_NAME: kafka
+#    ports:
+#      - 8082:8082
+#    networks:
+#      - network-demo
+#    extra_hosts:
+#      - 'service_host: 10.0.0.38'
+#  kafka-topics:
+#    container_name: demo-kafka-topics
+#    image: landoop/kafka-topics-ui
+#    depends_on:
+#      - kafka-rest
+#    environment:
+#      KAFKA_REST_PROXY_URL: http://kafka-rest:8082
+#      PROXY: 'true'
+#    ports:
+#      - 8000:8000
+#    networks:
+#      - network-demo
