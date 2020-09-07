@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
+import java.io.Serializable;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,7 +13,8 @@ import javax.persistence.Table;
 @Setter
 @Builder
 @Entity
-public class UserEntity extends BaseEntity {
+public class UserEntity extends BaseEntity implements Serializable {
+
     @JsonIgnore
     private String username;
     @JsonIgnore

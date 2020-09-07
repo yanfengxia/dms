@@ -28,7 +28,7 @@ public class AuthController {
     TokenBridge tokenBridge;
 
     @PostMapping("/login")
-    public ResponseEntity<TokenRO> login(@Validated @RequestBody LoginRO loginRO) {
+    public ResponseEntity<TokenRO> login(@Validated @RequestBody LoginRO loginRO) throws Exception {
         UserEntity userEntity = userService.getUserEntityByUserName(loginRO.getUsername());
         if (userEntity != null) {
             if (userEntity.getPassword().equals(loginRO.getPassword())) {

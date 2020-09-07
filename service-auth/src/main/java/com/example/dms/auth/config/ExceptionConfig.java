@@ -17,7 +17,7 @@ public class ExceptionConfig {
 
     @ExceptionHandler(Exception.class)
     private ResponseEntity exceptionHandler(Exception exception) {
-        log.error(exception.getMessage());
+        exception.printStackTrace();
         return new ResponseEntity(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }
