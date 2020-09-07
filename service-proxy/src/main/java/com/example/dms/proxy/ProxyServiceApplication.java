@@ -1,4 +1,4 @@
-package com.example.proxy;
+package com.example.dms.proxy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.example.auth.controller;
+package com.example.dms.auth.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 

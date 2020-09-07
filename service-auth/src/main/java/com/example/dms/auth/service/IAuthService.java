@@ -1,4 +1,4 @@
-package com.example.auth.service;
+package com.example.dms.auth.service;
 
 public interface IAuthService {
 

@@ -1,4 +1,4 @@
-package com.example.auth.entity;
+package com.example.dms.auth.entity;
 
 import javax.persistence.*;
 import java.util.Date;

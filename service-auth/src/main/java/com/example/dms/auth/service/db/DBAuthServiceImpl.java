@@ -1,6 +1,6 @@
-package com.example.auth.service.db;
+package com.example.dms.auth.service.db;
 
-import com.example.auth.service.IAuthService;
+import com.example.dms.auth.service.IAuthService;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 

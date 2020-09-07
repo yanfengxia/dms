@@ -1,4 +1,4 @@
-package com.example.auth.dao;
+package com.example.dms.auth.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

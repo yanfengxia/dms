@@ -1,8 +1,16 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 }
 
-group 'org.example.dms'
+ext {
+    springBootVersion = '2.3.3.RELEASE'
+    springCloudVersion = '2.2.5.RELEASE'
+    springBootPluginVersion = '2.3.3.RELEASE'
+}
+
+group 'org.example.dms.registry'
 version '1.0'
 
 repositories {
@@ -10,5 +18,9 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: "${springCloudVersion}"
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-server', version: "${springCloudVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "${springBootVersion}"
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
