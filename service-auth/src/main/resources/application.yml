@@ -18,3 +18,11 @@ spring:
     enabled: true
     sampler:
       probability: 1
+  datasource:
+    url: jdbc:mysql://linux.local:3306/example
+    username: root
+    password: abcd.1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
