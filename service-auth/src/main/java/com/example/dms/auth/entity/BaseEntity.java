@@ -1,9 +1,12 @@
 package com.example.dms.auth.entity;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @MappedSuperclass
+@Getter
 public abstract class BaseEntity {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)

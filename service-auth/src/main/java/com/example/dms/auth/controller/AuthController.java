@@ -42,5 +42,4 @@ public class AuthController {
             return new ResponseEntity("User login inforation not correct", HttpStatus.BAD_REQUEST);
         }
     }
-
 }
