@@ -14,4 +14,4 @@ spring:
     sampler:
       probability: 1
   application:
-    name: registry-service
+    name: registry

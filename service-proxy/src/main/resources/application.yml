@@ -1,20 +1,42 @@
-
-
 server:
-  port: 55001
-
-
+  port: 80
 
 eureka:
   client:
     register-with-eureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
 
 spring:
   application:
-    name: proxy-service
+    name: proxy
   sleuth:
     enabled: true
     sampler:
       probability: 1
+    zuul:
+      enabled: true
+    async:
+      configurer:
+        enabled: true
+      enabled: true
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+
+ribbon:
+  eureka:
+    enabled: true
+
+logging:
+  level:
+    com.netflix: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, routes

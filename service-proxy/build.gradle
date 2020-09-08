@@ -22,6 +22,8 @@ dependencies {
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-sleuth', version: "${springCloudVersion}"
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: "${springCloudVersion}"
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-zuul', version: "${springCloudVersion}"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: "${springBootVersion}"
+
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "${springBootVersion}"
 

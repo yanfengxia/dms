@@ -2,10 +2,6 @@
 
 server:
   port: 55002
-  servlet:
-    context-path: /service-auth
-
-
 
 eureka:
   client:
@@ -15,7 +11,7 @@ eureka:
 
 spring:
   application:
-    name: auth-service
+    name: auth
   sleuth:
     enabled: true
     sampler:

@@ -4,6 +4,7 @@ import com.example.dms.auth.entity.UserEntity;
 import com.example.dms.auth.model.Token;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.time.DateUtils;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ import java.util.UUID;
 @Slf4j
 public class TokenService {
 
-    @Cacheable(value = "token", key = "#userEntity.id")
+    @CachePut(value = "token", key = "#result.token")
     public Token createNewToken(UserEntity userEntity) {
         Date now = new Date();
         try {
