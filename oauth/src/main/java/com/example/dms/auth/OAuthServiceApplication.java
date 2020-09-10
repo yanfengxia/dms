@@ -8,8 +8,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCaching
-public class AuthServiceApplication {
+public class OAuthServiceApplication {
     public static void main (String[] args) {
-        SpringApplication.run(AuthServiceApplication.class, args);
+        SpringApplication.run(OAuthServiceApplication.class, args);
     }
 }

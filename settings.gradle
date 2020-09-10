@@ -1,5 +1,5 @@
 rootProject.name = 'dms'
-include 'service-auth'
-include 'service-proxy'
-include 'service-registry'
+include 'oauth'
+include 'proxy'
+include 'registry'
 
