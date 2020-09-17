@@ -30,3 +30,9 @@ spring:
   redis:
     port: 6379
     host: linux.local
+
+key: 7R9SATCVDWEXGZH2J4M5N6Q8R9SBUCVDXFYGZJ3K4M6P7Q8SATBUCWEXFY
+logging:
+  file:
+    name: /Users/mxia/logs/oauth.log
+

@@ -2,28 +2,38 @@ package com.example.dms.auth.service;
 
 import com.example.dms.auth.entity.UserEntity;
 import com.example.dms.auth.model.Token;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.time.DateUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.UUID;
 
 @Service
 @Slf4j
 public class TokenService {
 
-    @CachePut(value = "token", key = "#result.token")
-    public Token createNewToken(UserEntity userEntity) {
+    @Value("${key}")
+    private String key;
+
+//    @CachePut(value = "token", key = "#result.token")
+    public Token createNewToken(UserEntity userEntity) throws NoSuchAlgorithmException, InvalidKeyException, InvalidKeySpecException {
         Date now = new Date();
+        Date expiry = DateUtils.addHours(now, 1);
         try {
             Token token = Token.builder()
                     .createTime(now)
-                    .expiryTime(DateUtils.addHours(now, 1))
+                    .expiryTime(expiry)
                     .expiryIn(3600)
-                    .token(UUID.randomUUID().toString())
+                    .token(generateJWT(userEntity.getUsername(), now, expiry))
                     .user(userEntity)
                     .build();
             return token;
@@ -33,4 +43,26 @@ public class TokenService {
         }
     }
 
+    private String generateJWT(String subject, Date issueDate, Date expiryDate) throws InvalidKeySpecException, NoSuchAlgorithmException, InvalidKeyException {
+        try {
+            return Jwts.builder()
+                    .claim("modules", new ArrayList<String>(){{
+                        add("sales");
+                        add("product");
+                    }})
+                    .claim("roles", new ArrayList<String>(){{
+                        add("CUSTOMER_SERVICE_REPRESENTATIVE");
+                        add("CUSTOMER_SERVICE_MANAGER");
+                    }})
+                    .setSubject(subject)
+                    .setIssuedAt(issueDate)
+                    .setExpiration(expiryDate)
+                    .signWith(Keys.hmacShaKeyFor(Decoders.BASE64.decode(key)))
+                    .compact();
+        } catch (Exception ex) {
+            log.error(ex.getMessage());
+            ex.printStackTrace();
+            throw ex;
+        }
+    }
 }

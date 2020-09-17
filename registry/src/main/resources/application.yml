@@ -15,3 +15,7 @@ spring:
       probability: 1
   application:
     name: registry
+
+logging:
+  file:
+    name: /Users/mxia/logs/registry.log

@@ -26,6 +26,7 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
+#  sensitive-headers: Cookie, Set-Cookie
 
 ribbon:
   eureka:
@@ -33,10 +34,18 @@ ribbon:
 
 logging:
   level:
-    com.netflix: DEBUG
+    com.netflix: INFO
+  file:
+    name: /Users/mxia/logs/proxy.log
 
 management:
   endpoints:
     web:
       exposure:
         include: health, info, routes
+
+security:
+  jwt:
+    header: Authorization
+    prefix: Bearer
+    key: 7R9SATCVDWEXGZH2J4M5N6Q8R9SBUCVDXFYGZJ3K4M6P7Q8SATBUCWEXFY
