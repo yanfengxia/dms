@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: dms-registry
+  labels:
+    app: dms-registry
 spec:
   containers:
     - name: dms-registry-container
@@ -9,3 +11,10 @@ spec:
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 8761
+      resources:
+        limits:
+          cpu: 1000m
+          memory: 1Gi
+        requests:
+          cpu: 500m
+          memory: 1Gi
