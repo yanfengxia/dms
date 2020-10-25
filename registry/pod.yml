@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dms-registry
+spec:
+  containers:
+    - name: dms-registry-container
+      image: org.example.dms.registry/registry
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 8761
