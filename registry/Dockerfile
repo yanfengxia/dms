@@ -1,7 +1,5 @@
-FROM openjdk:8-slim
+FROM openjdk:11-slim
 MAINTAINER xiayanfeng
-#ARG JAR_FILE
-#ADD ${JAR_FILE} app.jar
-#RUN sh -c 'touch /app.jar'
-ENV JAVA_OPTS="-Xmx512m"
-#ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar /app.jar" ]
+ARG JAR_FILE
+ADD ${JAR_FILE} app.jar
+ENTRYPOINT [ "java", "-jar", "/app.jar" ]

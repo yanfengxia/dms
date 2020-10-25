@@ -11,6 +11,7 @@ ext {
     springBootPluginVersion = '2.3.3.RELEASE'
 }
 
+
 group 'org.example.dms.registry'
 version '1.0'
 
@@ -27,8 +28,13 @@ dependencies {
 }
 
 
+
 docker {
-    name "${group}/${project.name}"
+    println "archived file name - ${jar.destinationDirectory.get()}/${jar.archiveFileName.get()}"
+    println "docker image name - ${project.group}/${project.name}"
+    name "${project.group}/${project.name}"
+    files jar.destinationDirectory.get()
+    buildArgs(['JAR_FILE': "${jar.archiveFileName.get()}"])
 }
 
 docker.dependsOn(build)
