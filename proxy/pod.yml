@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: dms-registry-container
-      image: org.example.dms.registry/proxy
+      image: org.example.dms.proxy/proxy
       imagePullPolicy: IfNotPresent
       ports:
         - containerPort: 80
