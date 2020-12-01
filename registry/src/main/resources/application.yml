@@ -18,4 +18,4 @@ spring:
 
 logging:
   file:
-    name: /Users/mxia/logs/registry.log
+    name: ${LOG_FOLDER:.}/registry.log
