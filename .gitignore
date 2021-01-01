@@ -5,4 +5,7 @@
 .settings/
 .vscode/
 build/
+out/
 bin/
+*.gz
+*.log
