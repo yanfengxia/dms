@@ -27,13 +27,15 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: "${springBootVersion}"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: "${springBootVersion}"
 
+
     runtime group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.2'
     compile group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.2'
     runtime group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.2'
 
 
 
-    runtimeOnly 'mysql:mysql-connector-java'
+//    runtimeOnly 'mysql:mysql-connector-java'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.18'
 
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
 

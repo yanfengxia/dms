@@ -5,7 +5,7 @@ eureka:
   client:
     register-with-eureka: true
     serviceUrl:
-      defaultZone: ${REGISTRY_SERVICE_URL:http://localhost:8761/eureka/}
+      defaultZone: ${REGISTRY_SERVICE_URL:http://linux.local:8761/eureka/}
 
 spring:
   application:
@@ -15,9 +15,9 @@ spring:
     sampler:
       probability: 1
   datasource:
-    url: jdbc:mysql://linux.local:3306/admin
-    username: root
-    password: abcd1234
+    url: jdbc:postgresql://linux.local:5432/admin
+    username: postgres
+    password: abcd.1234
   jpa:
     hibernate:
       ddl-auto: validate
@@ -33,4 +33,7 @@ key: 7R9SATCVDWEXGZH2J4M5N6Q8R9SBUCVDXFYGZJ3K4M6P7Q8SATBUCWEXFY
 logging:
   file:
     name: /Users/mxia/logs/oauth.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss}[%-5level][%t][%X{traceId}|%X{spanId}][%X{tid}][%c{1.}] %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss}[%-5level][%t][%X{traceId}|%X{spanId}][%X{tid}][%c{1.}] %msg%n"
 
